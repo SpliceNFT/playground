@@ -55,5 +55,15 @@ function splice({ p5, params, dim }) {
   p5.noStroke();
 
   randomCircle(center.x, center.y);
+
+  const trait1 = {
+    trait_type: "Favorite_Pet",
+    value: p5.random() > 0.5 ? "Cat" : "Dog",
+  };
+  const trait2 = {
+    trait_type: "Favorite_Food",
+    value: p5.random() > 0.8 ? "Broccoli" : "Marshmallow",
+  };
+  return [trait1, trait2];
 }
 /////////////// END OF YOUR CODE ////////////////////////
